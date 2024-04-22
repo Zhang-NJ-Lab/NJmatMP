@@ -52,12 +52,12 @@ class MainWindow(QMainWindow):
         self.tips_lable .setGeometry(10,350,1000,60)
         self.tips_lable.setStyleSheet("font-size:25px;")
 
-        CDlogo = QPixmap(r"D:\conda\CDlogo.png")
-        scaled_CDlogo = CDlogo.scaled(200, 200)
-        self.logo_label = QLabel(self)
-        self.logo_label.setPixmap(scaled_CDlogo)
-        self.logo_label.resize(scaled_CDlogo .width(), scaled_CDlogo .height())
-        self.logo_label.setGeometry(600,100,200,200)
+        # CDlogo = QPixmap(r"D:\conda\CDlogo.png")
+        # scaled_CDlogo = CDlogo.scaled(200, 200)
+        # self.logo_label = QLabel(self)
+        # self.logo_label.setPixmap(scaled_CDlogo)
+        # self.logo_label.resize(scaled_CDlogo .width(), scaled_CDlogo .height())
+        # self.logo_label.setGeometry(600,100,200,200)
 
     def generate_cif_files(self):
         api_key = self.api_key_entry.text()
